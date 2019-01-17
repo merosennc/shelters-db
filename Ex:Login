@@ -1,4 +1,7 @@
-<script language="javascript">
+<html>
+	<head>
+		<body>
+			<script language="javascript">
 <!--//
 /*This Script allows people to enter by using a form that asks for a
 UserID and Password*/
@@ -7,9 +10,9 @@ if (form.id.value=="shelter") {
 if (form.pass.value=="db") {              
 location="page2.html" 
 } else {
-alert("Invalid Password")
+alert("Invalid Password");
 }
-} else {  alert("Invalid UserID")
+} else {  alert("Invalid UserID");
 }
 }
 //-->
@@ -26,3 +29,5 @@ type="password"></td></tr>
 <tr><td><center><input type="button" value="Login"
 onClick="pasuser(this.form)"></center></td><td><center><br><input
 type="Reset"></form></td></tr></table></center> 
+		<body>
+	</head>
