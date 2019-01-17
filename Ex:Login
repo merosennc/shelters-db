@@ -7,6 +7,7 @@
 UserID and Password*/
 function pasuser(form) {
 var i
+var b = new Boolean(0)
 var use = form.id.value
 var pass = form.pass.value
 var usernames = ["shelter"]
@@ -19,10 +20,11 @@ for(i = 0; i < usernames.length; i++) {
 		else {
 			alert("Invalid Password");
 		}
+		b = new Boolean(1)
 	}
-	else {
-		alert("Invalid UserID");
-	}
+}
+if (!b) {
+	alert("Invalid UserID");
 }
 /*if (form.id.value=="shelter") { 
 if (form.pass.value=="db") {              
